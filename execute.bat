@@ -1,13 +1,14 @@
 @echo off
 
+@rem Set the source and destination paths
+set "sourcePath=F:\Zabbix Agent 2"
+set "destPath=C:\Program Files\Zabbix Agent 2"
+set "logPath=F:\zabbix_agent2_install.log"
+
 @rem Store all echo in a log file
 echo Zabbix Agent 2 Installation Started...
-echo Zabbix Agent 2 Installation Started... > E:\Zabbix\zabbix_agent2_install.log
+echo Zabbix Agent 2 Installation Started... > %logPath%
 
-@rem Set the source and destination paths
-set "sourcePath=E:\Zabbix\Zabbix Agent 2"
-set "destPath=C:\Program Files\Zabbix Agent 2"
-set "logPath=E:\Zabbix\zabbix_agent2_install.log"
 
 @rem Copy Zabbix Agent folder
 echo Copying Zabbix Agent folder...
